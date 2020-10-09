@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quiz</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <button id = "Highscores" class="navbar-brand text-primary">view Highscores</button>
+      <span class="navbar-brand ml- 2 h1">Time: <span id="Time"> </span> </span>
+    </nav>
+
+    <main class="container-xl mt-5">
+      <div class="row pt-5">
+        <div class="col-xl-12 text-center mt-5"><h1 id = "questions">Coding Quizz</h1></div>
+      </div>
+      <div class="row">
+          <div class="col-xl-12 text-center mt-5"><p id = "instruction">You will have 60 seconds to anwser the 5 following questions for every anwser that you get wrong 10 seconds will be deducted from your time. If you run out of time you lose try to complete it in the fastest possible time and save your score to the highscore leader board.</p></div>
+          <div id = "Qcontent" class="col-12"><ul id="anwser"></ul>
+            <form id = "nameForm" class="form-inline">
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2" class="sr-only">Name or Initials</label>
+                <input type="username" class="form-control" id="userName" placeholder="Name or Initials">
+              </div>
+              <button id = "submitBtn" class="btn btn-primary mb-2">submit</button>
+            </form>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-xl-12 text-center mt-5"><button id = "start" type="button" class="btn btn-primary btn-lg">Start Quiz</button></div>
+      </div>
+      </main>
+    </div>
+  </body>
+</html>
